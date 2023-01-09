@@ -1,0 +1,11 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background: white;
+}
+
+.Todo-Item:hover .trash-icon {
+  display: block;
+}
+.flash {
+  background-color: rgb(107, 235, 90);
+}
