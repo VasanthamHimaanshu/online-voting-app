@@ -36,8 +36,8 @@ describe("Online election suite", () => {
     let response = await agent.get("/signup");
     const csrfToken = fetchCsrfToken(response);
     response = await agent.post("/admin").send({
-      firstName: "Sovit",
-      lastName: "chy",
+      firstName: "Anshu",
+      lastName: "Vasantham",
       email: "user.a@gmail.com",
       password: "12345678",
       _csrf: csrfToken,
@@ -68,7 +68,7 @@ describe("Online election suite", () => {
     const csrfToken = fetchCsrfToken(res);
     res = await agent.post("/admin").send({
       firstName: "Anshu",
-      lastName: "chy",
+      lastName: "Vasantham",
       email: "user.c@gmail.com",
       password: "12345678",
       _csrf: csrfToken,
